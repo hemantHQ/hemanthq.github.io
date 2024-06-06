@@ -33,6 +33,17 @@ body {
 	line-height: 1;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -2970,17 +2981,28 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		margin: 0 0 2em 0;
-	}
+.spotlight {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0 0 2em 0;
+}
+.spotlight_project {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0 0 5em 0;
+}
 
 		.spotlight .content {
 			-moz-flex: 1;

@@ -44,6 +44,33 @@ body {
     height: auto;
 }
 
+.zoomable-image {
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.zoomable-image.zoomed-landscape {
+    transform: scale(0.7); /* Adjust the scale factor for landscape images */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+}
+
+.zoomable-image.zoomed-portrait {
+    transform: scale(0.2); /* Adjust the scale factor for portrait images */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9999;
+}
+
 ol, ul {
 	list-style: none;
 }
